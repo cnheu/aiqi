@@ -25,7 +25,7 @@ SECRET_KEY = '$iob481is08wf0n46qljea)49xk@h18zkh!key6-rq)8w9we*8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['chris.local']
+ALLOWED_HOSTS = ['chris.local','http://cnheu.pythonanywhere.com/']
 
 
 # Application definition
