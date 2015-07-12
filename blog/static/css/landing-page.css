@@ -22,11 +22,17 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .navbar-default .navbar-nav>li>a  {
     color:#00C1B9;
+    font-size:16px;
+}
+
+img.logo {
+    height:40px; 
+    padding-top:3px;
 }
 
 .lead {
@@ -39,7 +45,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.jpg); 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.png); 
     background-repeat: no-repeat; 
     background-position: center center;
     background-attachment:fixed;
@@ -70,9 +76,31 @@ h6 {
 }
 
 .btn-lg.cta {
-    background-color: #EDAC47;
+    /*background-color:rgba(236,143,0,0.1);*/
+    background-color:rgba(255,255,255,0.1);
     color: #FFF;
-    border-color: #EDAC47;
+    border-color: #EC8F00;
+    border-width:4px;
+    height: 60px;
+    width: 270px;
+    padding-top: 13px;
+    font-weight:600;
+    font-size:150%;
+  
+}
+
+.btn-lg.cta:hover {
+    background-color: #EC8F00;
+    color: #FFF;
+    border-color #EC8F00;
+    /*border-color: #EDAC47;*/
+    border-width:4px;
+    height: 60px;
+    width: 270px;
+    padding-top: 13px;
+    font-weight:600;
+    font-size:150%; 
+
 }
 
 @media(max-width:767px) {
@@ -123,7 +151,7 @@ div.content-problem-statement .h2 .p {
 
 div.content-problem {
     background-color:#FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center,center;
@@ -143,7 +171,7 @@ div.content-prevention-statement {
 
 div.content-prevention {
     background-color:FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/prevention.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/prevention.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:right,top;
@@ -244,7 +272,7 @@ div.content-prevention {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-bg.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-bg.png) no-repeat center center;
     background-size: cover;
 }
 
