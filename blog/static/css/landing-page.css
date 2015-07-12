@@ -39,8 +39,11 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center center;
     background-attachment:fixed;
+    background-size: auto 100%;
     background-size: cover;
 }
 
@@ -104,6 +107,7 @@ div.content-problem-statement{
     padding-top: 80px;
     padding-bottom: 80px;
     background-color:#222;
+    background-size: auto 100%;
     background-size: cover;
 
 }
@@ -123,6 +127,7 @@ div.content-problem {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center,center;
+    background-size: auto 100%;
     background-size: cover;
     height:500px;
 }
@@ -204,16 +209,32 @@ div.content-prevention {
 
 .carousel-indicators > li {
     background-color: #00C1B9;
+    border: #00C1B9;
+    list-style-type: circle;
+    border-style: solid;
+    border-width: 1px; 
 } 
+
+/*.carousel-indicators .active {
+    background-color: #333;
+    border: #00C1B9;
+}*/
 
 .carousel-inner .col-lg-7 {
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
+    padding-top:8%;
+}
+
+@media(max-width:767px) {
+    .carousel-inner .col-lg-7 {
+        padding-right:10%;
+    }
 }
 
 .carousel-inner .row {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .carousel-inner .col-lg-5>img {
