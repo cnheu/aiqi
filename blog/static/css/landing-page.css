@@ -107,8 +107,10 @@ div.content-problem-statement div {
 
 div.content-problem {
     background-color:FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position:center,center;
     background-size: cover;
     height:500px;
 }
@@ -198,6 +200,9 @@ footer {
     background-color: #f8f8f8;
 }
 
+footer a {
+    color:#00C1B9;
+}
 p.copyright {
     margin: 15px 0 0;
 }
