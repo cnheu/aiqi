@@ -48,7 +48,7 @@ img.logo {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.png); 
     background-repeat: no-repeat; 
     background-position: center center;
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     background-size: auto 100%;
     background-size: cover;
 }
