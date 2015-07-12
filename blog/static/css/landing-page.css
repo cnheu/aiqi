@@ -48,11 +48,15 @@ img.logo {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.png); 
     background-repeat: no-repeat; 
     background-position: center center;
-    /*background-attachment:fixed;*/
     background-size: auto 100%;
     background-size: cover;
 }
 
+@media(min-width:767px){
+    .intro-header {
+        background-attachment:fixed;
+    }
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -153,11 +157,16 @@ div.content-problem {
     background-color:#FFF;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position:center,center;
     background-size: auto 100%;
     background-size: cover;
     height:500px;
+}
+
+@media(min-width:767px){
+    .content-problem {
+        background-attachment:fixed;
+    }
 }
 
 p.lead.problem {
@@ -173,12 +182,16 @@ div.content-prevention {
     background-color:FFF;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/prevention.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position:right,top;
     background-size: cover;
     height:500px;
 }
 
+@media(min-width:767px){
+    .content-prevention {
+        background-attachment:fixed;
+    }
+}
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
