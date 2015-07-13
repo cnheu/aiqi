@@ -164,7 +164,7 @@ div.content-problem {
 }
 
 @media(min-width:767px){
-    .content-problem {
+    div.content-problem {
         background-attachment:fixed;
     }
 }
@@ -188,7 +188,7 @@ div.content-prevention {
 }
 
 @media(min-width:767px){
-    .content-prevention {
+    div.content-prevention {
         background-attachment:fixed;
     }
 }
