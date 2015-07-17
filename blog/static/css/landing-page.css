@@ -84,7 +84,7 @@ img.logo {
     background-color:rgba(255,255,255,0.1);
     color: #FFF;
     border-color: orange;
-    border-width:4px;
+    border-width:5px;
     height: 60px;
     width: 270px;
     padding-top: 13px;
@@ -99,7 +99,7 @@ img.logo {
     color: #FFF;
     border-color: orange;
     /*border-color: #EDAC47;*/
-    border-width:4px;
+    border-width:px;
     height: 60px;
     width: 270px;
     padding-top: 13px;
@@ -211,10 +211,6 @@ div.content-prevention-statement {
     padding-right:10px;
 }
 
-@media(min-width:767px){
-    div.content-prevention-statement {
-    }
-}
 
 div.content-prevention-statement .col-lg-7 {
     padding-left: 20%;
@@ -240,11 +236,6 @@ div.content-prevention-statement .fa {
     text-align:center;
 }
 
-@media(min-width:767px){
-    div.content-prevention {
-        background-attachment:fixed;
-    }
-}
 
 div.content-prevention {
     background-color:FFF;
@@ -255,6 +246,12 @@ div.content-prevention {
     height:500px;
 }
 
+@media(min-width:767px){
+    div.content-prevention {
+        background-attachment:fixed;
+        background-size: 100% auto;
+    }
+}
 
 .network-name {
     text-transform: uppercase;
@@ -358,26 +355,20 @@ div.content-prevention {
 
 .banner .col-lg-4 {
     padding: 25px 100px;
+    text-align:center;
 }
 
-@media(min-width:767px) {
+.banner .col-lg-4 .btn-lg.cta {
+    margin: 0 auto;
+}
+
+/*@media(min-width:767px) {
     .banner .col-lg-4 .btn {
         position: absolute;
         left: 15%;
     }
-}
-
-/*.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
 }*/
+
 
 @media(max-width:767px) {
     .banner h2 {
@@ -385,17 +376,13 @@ div.content-prevention {
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
     }
-
-/*    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }*/
 }
+
+/* ABOUT US */
+.about-us {
+    padding: 100px 10px;
+}
+
 
 footer {
     padding: 50px 0;
