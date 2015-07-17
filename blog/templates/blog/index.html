@@ -29,6 +29,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/animatescroll.min.js" %}"></script>
+
 </head>
 
 <body>
@@ -44,19 +52,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#"><img class="logo img-responsive" src="{% static "img/logo.png" %}" alt=""></a>
+                <a href='' onclick="$('body').animatescroll(); return false;"><img class="logo img-responsive" src="{% static "img/logo.png" %}" alt=""></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#problem" class="nav-text">The Problem</a>
+                        <a href='' onclick="$('.content-problem-statement').animatescroll(); return false;" class="nav-text">The Problem</a>
                     </li>
                     <li>
-                        <a href="#solution" class="nav-text">How Aiqi Works?</a>
+                        <a href='' onclick="$('.content-features').animatescroll(); return false;" class="nav-text">How Aiqi Works</a>
                     </li>
                     <li>
-                        <a href="#about" class="nav-text">About Us</a>
+                        <a href='' onclick="$('.about-us').animatescroll(); return false;" class="nav-text">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +86,7 @@
                         <h3>A Risk Notification System to keep Asthma and Allergies Under Control</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
-                            <a href="#register" class="btn btn-default btn-lg cta">Register Your Interest!</a>
+                            <a href='' onclick="$('.banner .cta').animatescroll(); return false;" class="btn btn-default btn-lg cta">Register Your Interest!</a>
                             <!-- <li>
                                 <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
@@ -247,7 +255,7 @@
                     <h3>Take our expression of interest form, tell us what you want Aiqi to do and you'll be added to our shortlist.</h3>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <a href="#" class="btn btn-default btn-lg cta">Register Your Interest!</a>
+                    <a href="#register" class="btn btn-default btn-lg cta">Register Your Interest!</a>
 
                 </div>
             </div>
@@ -264,7 +272,7 @@
         <div class="container">
             <div class="row">
                 <h2 class="section-heading">About Us</h2>
-                <p class="lead">Aiqi, pronounced "aye chee", is the brain child of Christopher Nheu, a young, tech-entrepreneur based in Sydney, Australia. He's devoted to building technology that solves real problems for people. As an asthma and allergy sufferer himself he wants to connect and help sufferers everywhere to better manage their illnesses.</p>
+                <p class="lead">Aiqi, pronounced "aye chee", is the brain child of Christopher Nheu, a young, tech-entrepreneur based in Sydney, Australia. He's devoted to building technology that solves real problems for people. As an asthma and allergy sufferer himself he wants to connect and help sufferers everywhere to better manage their illnesses. Contact him at tofa.nheu@gmail.com</p>
             </div>
         </div>
     </div>
@@ -276,15 +284,15 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href='' onclick="$('body').animatescroll(); return false;" >Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#problem">The Problem</a>
+                            <a href='' onclick="$('.content-problem-statement').animatescroll(); return false;" >The Problem</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#solution">How Aiqi Works</a>
+                            <a href='' onclick="$('.content-features').animatescroll(); return false;" >How Aiqi Works</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
@@ -296,12 +304,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="{% static "js/jquery.js" %}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
 
     <script>
         //console.log($('#menu'));

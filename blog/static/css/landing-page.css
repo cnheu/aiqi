@@ -26,8 +26,14 @@ h6 {
 }
 
 .navbar-default .navbar-nav>li>a  {
+
     color:#00C1B9;
     font-size:16px;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover {
+    cursor:hand;
 }
 
 img.logo {
