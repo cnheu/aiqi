@@ -338,6 +338,8 @@ div.content-prevention {
     width: 70%;
 }
 
+/* CTA BANNER */
+
 .banner {
     padding: 100px 10px;
     color: #f8f8f8;
@@ -360,8 +362,15 @@ div.content-prevention {
 }
 
 .banner .col-lg-4 {
-    padding: 25px 100px;
+    padding: 25px;
     text-align:center;
+}
+
+@media(min-width:1200px) {
+	.banner .col-lg-4  {
+	    padding: 25px 100px;
+	    text-align:center;
+	}
 }
 
 .banner .col-lg-4 .btn-lg.cta {
