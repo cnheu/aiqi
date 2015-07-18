@@ -1,0 +1,152 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aiqi - Risk Notification System for Asthma and Allergy Sufferers</title>
+
+    <link rel="shortcut icon" href="{% static "img/logo.ico" %}" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static "css/landing-page.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/animatescroll.min.js" %}"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{% url "blog.views.index" %}"><img class="logo img-responsive" src="{% static "img/logo.png" %}" alt=""></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href='' onclick="$('.content-problem-statement').animatescroll({scrollSpeed:1800}); return false;" class="nav-text">The Problem</a>
+                    </li>
+                    <li>
+                        <a href='' onclick="$('.content-features').animatescroll({scrollSpeed:1800}); return false;" class="nav-text">How Aiqi Works</a>
+                    </li>
+                    <li>
+                        <a href='' onclick="$('.about-us').animatescroll({scrollSpeed:1800}); return false;" class="nav-text">About Us</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 registration">
+                <h2 class="section-heading">Expression of Interest</h2>
+            </div>
+        </div>
+    </div>
+    <div class="typeform-widget" data-url="https://tofanheu.typeform.com/to/kJxTsc" data-text="Get Aiqi"></div>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+    <!--     <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_kJxTsc&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div> -->
+
+    <!-- Footer -->
+<!--     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="{% url "blog.views.index" %}" >Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href='' onclick="$('.content-problem-statement').animatescroll({scrollSpeed:1800}); return false;" >The Problem</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href='' onclick="$('.content-features').animatescroll({scrollSpeed:1800}); return false;" >How Aiqi Works</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Aiqi Pty. Ltd. 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script>
+        //console.log($('#menu'));
+
+        /*
+         * Open the drawer when the menu icon is clicked.
+         */
+
+        $(document).ready(function() {
+            //Scroll Animation
+            // Typical jQuery wildcard is $('a[href*=#]') but using the ^, makes it a prefix only catch.
+            // .not stops it from selecting singular # references.
+            $('a[href^=#]').not('[href="#"]').on("click", function(e) {
+                
+                // The callback function maps the current element to $(this) 
+                var anchor = $(this)
+
+                anchor.log()
+                // query the body, stops any animations running on it, then animate it.
+                // animate() takes the css attribute scrollTop, and finds the y-value of the top of the next panel using the anchor's href, which is "#idNextPanel".
+                $('body').stop().animate({
+                    // scrollTop: $(anchor.attr('href')).offset().top 
+                    scrollTop: anchor.offset().top
+                    }, "slow");
+                e.preventDefault();
+            });
+        });
+
+    </script>
+    <script>
+        $('.carousel').carousel({
+            interval: 10000
+        })
+    </script>
+
+</body>
+
+</html>

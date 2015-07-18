@@ -437,3 +437,13 @@ footer a {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/* REGISTRATION */
+.col-lg-12.registration {
+    padding-top: 75px;
+}
+
+.typeform-widget {
+    width:100%;
+    height:500px;
+}

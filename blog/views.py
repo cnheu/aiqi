@@ -48,3 +48,6 @@ def post_edit(request, pk):
 
 def index(request):
     return render(request, 'blog/index.html', {'index':index})
+
+def registration(request):
+    return render(request, 'blog/registration.html', {'registration': registration})
