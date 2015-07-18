@@ -41,14 +41,11 @@ img.logo {
     padding-top:3px;
 }
 
-.lead {
-    font-size: 20px;
-    font-weight: 400;
-}
+/* HERO BANNER */
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     text-align: center;
     color: #f8f8f8;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-mum-daughter.png); 
@@ -64,6 +61,7 @@ img.logo {
         background-attachment:fixed;
     }
 }
+
 .intro-message {
     height:100%;
     top:35%;
@@ -141,6 +139,18 @@ img.logo {
         padding-left:2.5%;
     }
 }
+
+.arrow.fa-angle-down {
+    font-size:80px;
+    color:rgba(255,255,255,0.3);
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.arrow.fa-angle-down:hover {
+   
+    text-decoration:none;
+}
 /* START STORY */
 
 .section-heading {
@@ -155,24 +165,16 @@ img.logo {
     border-top: 3px solid #e7e7e7;
 }
 
-div.content-problem {
-    background-color:#FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.png);
-    background-repeat: no-repeat;
-    background-position:center,top;
-    background-size: auto 100%;
-    background-size: cover;
-    height:500px;
+.lead {
+    font-size: 20px;
+    font-weight: 400;
 }
 
-@media(min-width:767px){
-    div.content-problem {
-        background-attachment:fixed;
-    }
-}
+/* PROBLEM */
+
 div.content-problem-statement{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-left:10px;
     padding-right:10px;
     background-color:#222;
@@ -208,11 +210,27 @@ p.lead.problem {
     padding-bottom: 2.5px;
 }
 
+div.content-problem {
+    background-color:#FFF;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/problem.png);
+    background-repeat: no-repeat;
+    background-position:center,top;
+    background-size: auto 100%;
+    background-size: cover;
+    height:500px;
+}
+
+@media(min-width:767px){
+    div.content-problem {
+        background-attachment:fixed;
+    }
+}
+
 /* ========= PREVENTION ========== */
 
 div.content-prevention-statement {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-left:10px;
     padding-right:10px;
 }
@@ -277,14 +295,15 @@ div.content-prevention {
     border-bottom: 1px solid #e7e7e7;
 }*/
 
+/* FEATURES */
 
 .content-features {
     background-color: #eee;
 }
 
 .carousel {
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none
@@ -312,10 +331,9 @@ div.content-prevention {
     border-width: 1px; 
 } 
 
-/*.carousel-indicators .active {
-    background-color: #333;
-    border: #00C1B9;
-}*/
+.carousel-indicators {
+    bottom:5%;
+}
 
 .carousel-inner .col-lg-7 {
     padding-left: 10%;
@@ -395,7 +413,7 @@ div.content-prevention {
 
 /* ABOUT US */
 .about-us {
-    padding: 100px 10px;
+    padding: 100px 30px;
 }
 
 
