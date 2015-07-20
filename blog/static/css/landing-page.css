@@ -140,6 +140,13 @@ img.logo {
     }
 }
 
+
+@media(max-width:767px) {
+    .arrow.fa-angle-down {
+        margin-top: 30%;
+    }
+}
+
 .arrow.fa-angle-down {
     font-size:80px;
     color:rgba(255,255,255,0.3);
@@ -148,9 +155,6 @@ img.logo {
     text-decoration:none;
 }
 
-@media(max-width:767px) {
-    margin-bottom: 0px;
-}
 
 .arrow.fa-angle-down:hover {
    
