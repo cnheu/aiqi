@@ -148,10 +148,15 @@ img.logo {
     text-decoration:none;
 }
 
+@media(max-width:767px) {
+    margin-bottom: 0px;
+}
+
 .arrow.fa-angle-down:hover {
    
     text-decoration:none;
 }
+
 /* START STORY */
 
 .section-heading {
