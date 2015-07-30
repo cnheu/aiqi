@@ -311,6 +311,11 @@ div.content-prevention {
     background-color: #eee;
 }
 
+h2.content-features {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .carousel {
     padding-top:5%;
     padding-bottom:5%;
