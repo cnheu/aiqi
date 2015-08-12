@@ -308,12 +308,18 @@ div.content-prevention {
 /* FEATURES */
 
 .content-features {
-    background-color: #eee;
+    background-color: #FFF;
 }
 
 h2.content-features {
     padding-top: 20px;
-    text-align: center;
+    /*text-align: center;*/
+}
+
+.section-sub-heading{
+    /*margin-bottom: 40px;*/
+    color: #FFA500;
+    font-size:25px;
 }
 
 .carousel {
@@ -368,6 +374,9 @@ h2.content-features {
     }
 }
 
+
+
+
 .carousel-inner .row {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -379,6 +388,13 @@ h2.content-features {
     margin:auto;
 }
 
+@media(max-width:1200px) {
+    .carousel-inner .col-lg-5>img{
+        width:300px;
+        display:block;
+        margin:auto;
+    }    
+}
 /* CTA BANNER */
 
 .banner {
